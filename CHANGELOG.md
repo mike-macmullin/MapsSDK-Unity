@@ -5,6 +5,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and the SDK NuGet package adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+## 0.6.0 - 2020-04-09
+### Maps SDK
+#### Added
+- [`ElevationTileLayer`](https://github.com/microsoft/MapsSDK-Unity/wiki/ElevationTileLayer) to enable rendering custom elevation data sources.
+
+#### Fixed
+- More reduction of GC allocations. There are no longer allocations when the map is idle. 
+- Copyright text not being culled and showing through map.
+- Copyright text misaligned in certain rotations.
+
+
 ## 0.5.1 - 2020-03-03
 ### Maps SDK
 #### Added

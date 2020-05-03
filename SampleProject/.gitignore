@@ -34,6 +34,10 @@ obj/
 ehthumbs.db
 Thumbs.db
 
+# MSBuild for Unity
+*.g.props
+*.g.targets
+
 Packages_/
 !*.meta
 Assets/Packages.meta

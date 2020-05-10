@@ -4,10 +4,28 @@ All notable changes to the SDK NuGet package and it's supporting scripts will be
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and the SDK NuGet package adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+Refer to the [Getting Started](https://github.com/microsoft/MapsSDK-Unity/wiki/Getting-started) documentation for instructions about how to import and upgrade the SDK.
+
+## 0.7.1 - 2020-05-08
+
+### Maps SDK
+#### Fixed
+- Meta files used for native plugins are now compatible with Unity 2018.4+. [#52](https://github.com/microsoft/MapsSDK-Unity/issues/52)
+- Fixed bug that caused raycast to fail in some conditions.
+- Reduced overhead of clipping distance render pass.
+
+## 0.7.0 - 2020-05-04
+
+### Maps SDK
+#### Added
+- Native plugin that improves the efficiency of decoding map data and signifcantly reduces GC usage. Supported platforms: Android/iOS/Windows.
+- Compressed texture formats for model data on Android/iOS, reducing memory usage on these platforms.
+- Elevation scale API that can be used to exaggerate or flatten terrain. [#50](https://github.com/microsoft/MapsSDK-Unity/issues/50)
+
+#### Removed
+- Removed support for the deprecated UWP .NET scripting backend.
 
 ## 0.6.1 - 2020-04-17
-
-**The SDK's support for the _.NET scripting backend on UWP_ will be deprecated.** This change will happen in a future version. The IL2CPP scripting backend for UWP will continue to be supported.
 
 ### Maps SDK
 #### Changed
